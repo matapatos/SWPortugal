@@ -7,8 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1656F4BE1C2FE078005619AE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656F4BD1C2FE078005619AE /* MapViewController.swift */; };
+		1656F4C01C2FE096005619AE /* AddParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656F4BF1C2FE096005619AE /* AddParkViewController.swift */; };
+		16570D5E1C4FEC4700D91EB6 /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16570D5D1C4FEC4700D91EB6 /* SSRadioButton.swift */; };
+		16570D601C4FECA600D91EB6 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16570D5F1C4FECA600D91EB6 /* SSRadioButtonsController.swift */; };
+		165756691C4C5040006297FA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165756681C4C5040006297FA /* SettingsViewController.swift */; };
+		1659A09E1C30092C00419F83 /* ShowParksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659A09D1C30092C00419F83 /* ShowParksTableViewController.swift */; };
+		1659A0A21C300A3D00419F83 /* ShowParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659A0A11C300A3D00419F83 /* ShowParkTableViewCell.swift */; };
+		1659A0A41C30122600419F83 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659A0A31C30122600419F83 /* RatingControl.swift */; };
+		166F16121C30007B007D5EA6 /* SWPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F16111C30007B007D5EA6 /* SWPark.swift */; };
+		169A67A21C31735000305130 /* SWPark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A679B1C31735000305130 /* SWPark+CoreDataProperties.swift */; };
+		169A67A31C31735000305130 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A679C1C31735000305130 /* Image+CoreDataProperties.swift */; };
+		169A67A41C31735000305130 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A679D1C31735000305130 /* Image.swift */; };
+		169A67A51C31735000305130 /* Coordinates+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A679E1C31735000305130 /* Coordinates+CoreDataProperties.swift */; };
+		169A67A61C31735000305130 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A679F1C31735000305130 /* Coordinates.swift */; };
+		169A67A71C31735000305130 /* Equipment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A67A01C31735000305130 /* Equipment+CoreDataProperties.swift */; };
+		169A67A81C31735000305130 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A67A11C31735000305130 /* Equipment.swift */; };
+		169A67B01C31840100305130 /* Equip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A67AF1C31840100305130 /* Equip.swift */; };
+		169A67B21C31854800305130 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169A67B11C31854800305130 /* Park.swift */; };
 		16D1E1781C2F204A00706961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D1E1771C2F204A00706961 /* AppDelegate.swift */; };
-		16D1E17A1C2F204A00706961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D1E1791C2F204A00706961 /* ViewController.swift */; };
 		16D1E17D1C2F204A00706961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D1E17B1C2F204A00706961 /* Main.storyboard */; };
 		16D1E1801C2F204A00706961 /* RealSWPortugal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16D1E17E1C2F204A00706961 /* RealSWPortugal.xcdatamodeld */; };
 		16D1E1821C2F204A00706961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D1E1811C2F204A00706961 /* Assets.xcassets */; };
@@ -35,9 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1656F4BD1C2FE078005619AE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1656F4BF1C2FE096005619AE /* AddParkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkViewController.swift; sourceTree = "<group>"; };
+		16570D5D1C4FEC4700D91EB6 /* SSRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
+		16570D5F1C4FECA600D91EB6 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
+		165756681C4C5040006297FA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1659A09D1C30092C00419F83 /* ShowParksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowParksTableViewController.swift; sourceTree = "<group>"; };
+		1659A0A11C300A3D00419F83 /* ShowParkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowParkTableViewCell.swift; sourceTree = "<group>"; };
+		1659A0A31C30122600419F83 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		166F16111C30007B007D5EA6 /* SWPark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPark.swift; sourceTree = "<group>"; };
+		169A679B1C31735000305130 /* SWPark+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SWPark+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		169A679C1C31735000305130 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		169A679D1C31735000305130 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		169A679E1C31735000305130 /* Coordinates+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinates+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		169A679F1C31735000305130 /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		169A67A01C31735000305130 /* Equipment+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Equipment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		169A67A11C31735000305130 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		169A67AF1C31840100305130 /* Equip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equip.swift; sourceTree = "<group>"; };
+		169A67B11C31854800305130 /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		16D1E1741C2F204A00706961 /* RealSWPortugal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealSWPortugal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D1E1771C2F204A00706961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16D1E1791C2F204A00706961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16D1E17C1C2F204A00706961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16D1E17F1C2F204A00706961 /* RealSWPortugal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealSWPortugal.xcdatamodel; sourceTree = "<group>"; };
 		16D1E1811C2F204A00706961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +110,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16500E1E1C4BF40300012AC8 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1659A09D1C30092C00419F83 /* ShowParksTableViewController.swift */,
+				1656F4BD1C2FE078005619AE /* MapViewController.swift */,
+				1656F4BF1C2FE096005619AE /* AddParkViewController.swift */,
+				165756681C4C5040006297FA /* SettingsViewController.swift */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		16570D5B1C4FEC2800D91EB6 /* CustomItems */ = {
+			isa = PBXGroup;
+			children = (
+				16570D5C1C4FEC3300D91EB6 /* RadioButton */,
+			);
+			name = CustomItems;
+			sourceTree = "<group>";
+		};
+		16570D5C1C4FEC3300D91EB6 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				16570D5D1C4FEC4700D91EB6 /* SSRadioButton.swift */,
+				16570D5F1C4FECA600D91EB6 /* SSRadioButtonsController.swift */,
+			);
+			name = RadioButton;
+			sourceTree = "<group>";
+		};
+		169A67A91C317C3300305130 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				169A679B1C31735000305130 /* SWPark+CoreDataProperties.swift */,
+				169A679C1C31735000305130 /* Image+CoreDataProperties.swift */,
+				169A679D1C31735000305130 /* Image.swift */,
+				169A679E1C31735000305130 /* Coordinates+CoreDataProperties.swift */,
+				169A679F1C31735000305130 /* Coordinates.swift */,
+				169A67A01C31735000305130 /* Equipment+CoreDataProperties.swift */,
+				169A67A11C31735000305130 /* Equipment.swift */,
+				166F16111C30007B007D5EA6 /* SWPark.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		169A67AA1C317C6800305130 /* Auxiliary */ = {
+			isa = PBXGroup;
+			children = (
+				169A67AF1C31840100305130 /* Equip.swift */,
+				169A67B11C31854800305130 /* Park.swift */,
+			);
+			name = Auxiliary;
+			sourceTree = "<group>";
+		};
 		16D1E16B1C2F204A00706961 = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +185,13 @@
 		16D1E1761C2F204A00706961 /* RealSWPortugal */ = {
 			isa = PBXGroup;
 			children = (
+				16570D5B1C4FEC2800D91EB6 /* CustomItems */,
+				16D1E1AB1C2F20F700706961 /* Stores */,
+				16D1E1AA1C2F20E800706961 /* Controllers */,
+				16D1E1A91C2F20E200706961 /* Views */,
+				16D1E1A81C2F20DC00706961 /* CoreData */,
 				16D1E1771C2F204A00706961 /* AppDelegate.swift */,
-				16D1E1791C2F204A00706961 /* ViewController.swift */,
-				16D1E17B1C2F204A00706961 /* Main.storyboard */,
 				16D1E1811C2F204A00706961 /* Assets.xcassets */,
-				16D1E1831C2F204A00706961 /* LaunchScreen.storyboard */,
 				16D1E1861C2F204A00706961 /* Info.plist */,
 				16D1E17E1C2F204A00706961 /* RealSWPortugal.xcdatamodeld */,
 			);
@@ -126,6 +214,41 @@
 				16D1E19C1C2F204A00706961 /* Info.plist */,
 			);
 			path = RealSWPortugalUITests;
+			sourceTree = "<group>";
+		};
+		16D1E1A81C2F20DC00706961 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				169A67AA1C317C6800305130 /* Auxiliary */,
+				169A67A91C317C3300305130 /* Models */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		16D1E1A91C2F20E200706961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1659A0A11C300A3D00419F83 /* ShowParkTableViewCell.swift */,
+				1659A0A31C30122600419F83 /* RatingControl.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		16D1E1AA1C2F20E800706961 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16500E1E1C4BF40300012AC8 /* MainScreen */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		16D1E1AB1C2F20F700706961 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				16D1E17B1C2F204A00706961 /* Main.storyboard */,
+				16D1E1831C2F204A00706961 /* LaunchScreen.storyboard */,
+			);
+			name = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +382,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16D1E17A1C2F204A00706961 /* ViewController.swift in Sources */,
+				169A67B01C31840100305130 /* Equip.swift in Sources */,
+				16570D601C4FECA600D91EB6 /* SSRadioButtonsController.swift in Sources */,
+				1659A0A21C300A3D00419F83 /* ShowParkTableViewCell.swift in Sources */,
+				169A67A51C31735000305130 /* Coordinates+CoreDataProperties.swift in Sources */,
+				169A67A71C31735000305130 /* Equipment+CoreDataProperties.swift in Sources */,
+				169A67A31C31735000305130 /* Image+CoreDataProperties.swift in Sources */,
+				1656F4C01C2FE096005619AE /* AddParkViewController.swift in Sources */,
+				169A67B21C31854800305130 /* Park.swift in Sources */,
 				16D1E1781C2F204A00706961 /* AppDelegate.swift in Sources */,
+				1659A0A41C30122600419F83 /* RatingControl.swift in Sources */,
+				166F16121C30007B007D5EA6 /* SWPark.swift in Sources */,
+				1656F4BE1C2FE078005619AE /* MapViewController.swift in Sources */,
+				1659A09E1C30092C00419F83 /* ShowParksTableViewController.swift in Sources */,
+				169A67A61C31735000305130 /* Coordinates.swift in Sources */,
 				16D1E1801C2F204A00706961 /* RealSWPortugal.xcdatamodeld in Sources */,
+				169A67A41C31735000305130 /* Image.swift in Sources */,
+				169A67A21C31735000305130 /* SWPark+CoreDataProperties.swift in Sources */,
+				169A67A81C31735000305130 /* Equipment.swift in Sources */,
+				165756691C4C5040006297FA /* SettingsViewController.swift in Sources */,
+				16570D5E1C4FEC4700D91EB6 /* SSRadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +543,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RealSWPortugal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kk.RealSWPortugal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -414,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RealSWPortugal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kk.RealSWPortugal;
@@ -488,6 +631,7 @@
 				16D1E1A11C2F204A00706961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16D1E1A21C2F204A00706961 /* Build configuration list for PBXNativeTarget "RealSWPortugalTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +640,7 @@
 				16D1E1A41C2F204A00706961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16D1E1A51C2F204A00706961 /* Build configuration list for PBXNativeTarget "RealSWPortugalUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +649,7 @@
 				16D1E1A71C2F204A00706961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

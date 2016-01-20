@@ -1,25 +1,200 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mgP-Lk-i25">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Add_park-->
+        <scene sceneID="O16-8T-Vbn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zW5-WB-pwQ" userLabel="Add_park" customClass="AddParkViewController" customModule="RealSWPortugal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="leh-OX-VA0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ivi-vj-bTV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="MCD-L0-Wsa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="+" id="2Fi-yv-ejw" userLabel="Add park"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAm-Em-d8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-394" y="710"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="LMh-jG-S29">
+            <objects>
+                <viewController id="e9F-CC-OTf" userLabel="Map" customClass="MapViewController" customModule="RealSWPortugal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bYG-SB-jxw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fax-d1-HVx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OlC-Ew-OgB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="s2z-kr-SfH" userLabel="Map"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCD-er-xZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="50"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wBP-oe-PsH">
+            <objects>
+                <tabBarController id="mgP-Lk-i25" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9lb-IJ-f4t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e9F-CC-OTf" kind="relationship" relationship="viewControllers" id="RcE-Qm-gL2"/>
+                        <segue destination="zW5-WB-pwQ" kind="relationship" relationship="viewControllers" id="I3x-p0-tww"/>
+                        <segue destination="h9W-oO-pi0" kind="relationship" relationship="viewControllers" id="0rk-w2-Mdr"/>
+                        <segue destination="D6I-x0-bj6" kind="relationship" relationship="viewControllers" id="qxR-a3-20Y"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIV-fF-KI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1210" y="334"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="3fU-ZY-vHF">
+            <objects>
+                <viewController title="Settings" id="D6I-x0-bj6" customClass="SettingsViewController" customModule="RealSWPortugal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FIA-Zs-MpO"/>
+                        <viewControllerLayoutGuide type="bottom" id="sQ6-Gs-Ctd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JMN-Te-nAc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5k-6z-Eak">
+                                <rect key="frame" x="20" y="74" width="125" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P5u-qm-DRa">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Settings" id="tWY-pp-8Yu">
+                                        <barButtonItem key="backBarButtonItem" title="Cancel" id="DFO-Pq-80c"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="CKX-9b-deb"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="cgA-AZ-aCQ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ic-23-Lzk" customClass="SSRadioButton" customModule="RealSWPortugal" customModuleProvider="target">
+                                <rect key="frame" x="20" y="135" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-kz-R1P" customClass="SSRadioButton" customModule="RealSWPortugal" customModuleProvider="target">
+                                <rect key="frame" x="20" y="103" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Dob-gn-65v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxE-h1-jgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1161" y="1334"/>
+        </scene>
+        <!--Show parks-->
+        <scene sceneID="Ptr-8X-Sz5">
+            <objects>
+                <tableViewController id="h9W-oO-pi0" customClass="ShowParksTableViewController" customModule="RealSWPortugal" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="158" sectionHeaderHeight="28" sectionFooterHeight="28" id="pUN-7N-Ra2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowParkTableViewCell" rowHeight="158" id="FCM-Yu-vRl" customClass="ShowParkTableViewCell" customModule="RealSWPortugal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="158"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FCM-Yu-vRl" id="BcE-4I-REg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="157"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRR-EO-19N" customClass="RatingControl" customModule="RealSWPortugal" customModuleProvider="target">
+                                            <rect key="frame" x="221" y="79" width="371" height="64"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43E-Qm-gMQ">
+                                            <rect key="frame" x="8" y="15" width="205" height="134"/>
+                                            <animations/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QGB-b5-5fc">
+                                            <rect key="frame" x="221" y="15" width="73" height="63"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TItle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIN-bt-wVz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqg-hc-15L" userLabel="Location">
+                                                    <rect key="frame" x="0.0" y="21" width="73" height="21"/>
+                                                    <animations/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" link="YES"/>
+                                                    </accessibility>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.37599322410000002" green="0.74580666569999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Park type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyg-Ig-9g7">
+                                                    <rect key="frame" x="0.0" y="42" width="73" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </stackView>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="parkImage" destination="43E-Qm-gMQ" id="VBh-0X-0oq"/>
+                                    <outlet property="parkLocation" destination="bqg-hc-15L" id="kYX-td-6xI"/>
+                                    <outlet property="parkRating" destination="TRR-EO-19N" id="XZz-OD-ghf"/>
+                                    <outlet property="parkTitle" destination="FIN-bt-wVz" id="P1A-HX-kqa"/>
+                                    <outlet property="parkType" destination="Gyg-Ig-9g7" id="fFO-Ko-kqy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="h9W-oO-pi0" id="P7W-iN-sss"/>
+                            <outlet property="delegate" destination="h9W-oO-pi0" id="F9A-Ih-qrX"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Show parks" id="T0G-Gq-wki"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUS-0L-Msu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-464" y="1491"/>
         </scene>
     </scenes>
 </document>

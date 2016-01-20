@@ -10,15 +10,78 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, NSFetchedResultsControllerDelegate {
 
     var window: UIWindow?
-
+    var equipmentController : NSFetchedResultsController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.equipmentController = fetchEquipmentsController()
+        
+        fetchOrInsertDefaultEquipments()
+        
         return true
     }
+    
+    /*-------------------------- CUSTOM CORE DATA FUNCTIONS ------------------*/
+    
+    private func fetchOrInsertDefaultEquipments(){
+        for e in EquipType.allValues {
+            if hasEquipment(e) {
+                insertEquipmentWithoutSaving(e)
+            }
+        }
+        saveContext() //It just save if it has changes
+    }
+    
+    private func insertEquipmentWithoutSaving(name:String){
+        let equip = NSEntityDescription.insertNewObjectForEntityForName("Equipment", inManagedObjectContext: managedObjectContext) as! Equipment
+        equip.name = name
+        equip.swParks = nil
+    }
+    
+    private func hasEquipment(equip:String) -> Bool{
+        if equip.isEmpty{
+            return false
+        }
+        
+        for fo in equipmentController.fetchedObjects!{
+            let e = fo as! Equipment
+            if e.name == equip{
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    func fetchEquipmentsController() -> NSFetchedResultsController {
+        
+        let fetchedEquipmentsController : NSFetchedResultsController = {
+            let parksFetchRequest = NSFetchRequest(entityName: "Equipment")
+            let primarySort = NSSortDescriptor(key: "name", ascending: true)
+            parksFetchRequest.sortDescriptors = [primarySort]
+            
+            let frc = NSFetchedResultsController(fetchRequest: parksFetchRequest, managedObjectContext: managedObjectContext, sectionNameKeyPath: "name", cacheName: nil)
+            
+            frc.delegate = self
+            
+            return frc
+        }()
+        
+        do {
+            try fetchedEquipmentsController.performFetch()
+        } catch {
+            let nserror = error as NSError
+            NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+            abort()
+        }
+        
+        return fetchedEquipmentsController
+    }
+    
+    /*-------------------------- END CUSTOM CORE DATA FUNCTIONS ------------------*/
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -106,6 +169,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    
+    
 
 }
 

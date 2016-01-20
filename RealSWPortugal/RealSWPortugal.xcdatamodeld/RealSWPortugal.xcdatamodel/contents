@@ -1,4 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A282b" minimumToolsVersion="Automatic">
+    <entity name="Coordinates" representedClassName=".Coordinates" syncable="YES">
+        <attribute name="latitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="swPark" maxCount="1" deletionRule="Cascade" destinationEntity="SWPark" inverseName="coordinates" inverseEntity="SWPark" syncable="YES"/>
+    </entity>
+    <entity name="Equipment" representedClassName=".Equipment" syncable="YES">
+        <attribute name="name" attributeType="String" minValueString="0" syncable="YES"/>
+        <relationship name="swParks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SWPark" inverseName="equipments" inverseEntity="SWPark" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName=".Image" syncable="YES">
+        <attribute name="data" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="swPark" maxCount="1" deletionRule="Cascade" destinationEntity="SWPark" inverseName="images" inverseEntity="SWPark" syncable="YES"/>
+    </entity>
+    <entity name="SWPark" representedClassName=".SWPark" syncable="YES">
+        <attribute name="comments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="rating" attributeType="Integer 16" minValueString="0" maxValueString="5" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="type" attributeType="String" minValueString="1" syncable="YES"/>
+        <relationship name="coordinates" maxCount="1" deletionRule="Cascade" destinationEntity="Coordinates" inverseName="swPark" inverseEntity="Coordinates" syncable="YES"/>
+        <relationship name="equipments" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Equipment" inverseName="swParks" inverseEntity="Equipment" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" maxCount="5" deletionRule="Cascade" destinationEntity="Image" inverseName="swPark" inverseEntity="Image" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Coordinates" positionX="-63" positionY="36" width="128" height="90"/>
+        <element name="Equipment" positionX="0" positionY="90" width="128" height="75"/>
+        <element name="Image" positionX="-36" positionY="54" width="128" height="75"/>
+        <element name="SWPark" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
 </model>
